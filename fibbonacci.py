@@ -1,0 +1,13 @@
+print('enter termination point')
+terminate=input()
+print('Enter value')
+var1= input()
+print('Enter value 2')
+var2= input()
+while (float(var1) < float(terminate)):
+    print (str(float(var1)+float(var2)))
+    var1=(str(float(var1)+float(var2)))
+    print (str(float(var1)+float(var2)))
+    var2=(str(float(var1)+float(var2)))
+print('Your golden ratio equals')
+print((float(var2))/(float(var1)))
