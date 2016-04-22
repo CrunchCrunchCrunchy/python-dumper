@@ -1,0 +1,25 @@
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+# [1][1],[2][1],[3][1],[len(tableData][1]
+# [2][1]...
+#...
+#...[len(
+x=0
+y=0
+def printTable(tableData):
+    global x
+    global y
+##    colwid=[0]*len(tableData) #
+##    for i in range(len(tableData)):
+##                 for ii in range(len(tableData[i])):
+##                               if len(tableData[i][ii])>colwid[i]:
+##                                      colwid[i]=len(tableData[i][ii])
+while y<len(tableData):
+    print(tableData[y][x]+' ',end='')
+    y+=1
+    if y>=(len(tableData)):
+        y=0
+        x+=1
+        print('\n')
+printTable(tableData)
